@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mainContainer {
+
+border: 1px solid #2d2d2d;
+border-radius: 1rem;
+display: flex;
+justify-content: center;
+
+}
+.imgContainer img {
+    height: auto;
+    width: 35rem;
+}
+h2 {
+    font-size: 1rem;
+}
+.imgContainer, .faq {
+    width: 30rem;
+}
