@@ -15,11 +15,22 @@ border: 1px solid #2d2d2d;
 border-radius: 1rem;
 display: flex;
 justify-content: center;
+overflow: hidden;
 
 }
 .imgContainer img {
     height: auto;
     width: 35rem;
+    margin-left: -4rem;
+    margin-top: 2rem;
+}
+.imgContainer {
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-position: center;
+    background-size:45rem;
+    background-position-y: -15rem;
+    background-position-x: right;
+    background-repeat: no-repeat;
 }
 h2 {
     font-size: 1rem;
@@ -27,3 +38,23 @@ h2 {
 .imgContainer, .faq {
     width: 30rem;
 }
+.faq {
+    padding: 2rem;
+}
+
+details {
+    border-bottom: 1px grey solid;
+    padding: 1rem;
+}
+summary {
+    list-style: none;
+  }
+summary::after {
+    content: url("/images/icon-arrow-down.svg");
+    display: inline-block;
+  }
+details[open] summary::after{
+    content: url("/images/icon-arrow-down.svg");
+    transform: rotate(180deg);
+    display: inline-block;
+  }
