@@ -27,7 +27,7 @@ overflow: hidden;
 .imgContainer {
     background-image: url(/images/bg-pattern-desktop.svg);
     background-position: center;
-    background-size:45rem;
+    background-size: 45rem;
     background-position-y: -15rem;
     background-position-x: right;
     background-repeat: no-repeat;
@@ -39,22 +39,35 @@ h2 {
     width: 30rem;
 }
 .faq {
-    padding: 2rem;
+    padding: 2rem 6rem 2rem 2rem;
 }
 
 details {
-    border-bottom: 1px grey solid;
-    padding: 1rem;
+    border-bottom: 1px lightgrey solid;
+    padding-top: 1rem;
+}
+ p {
+    margin-top: 0;
+ }
+details[open] {
+    transition: 1s ease;
 }
 summary {
     list-style: none;
+    display: flex;
   }
 summary::after {
     content: url("/images/icon-arrow-down.svg");
-    display: inline-block;
+    margin: 0 0 1rem auto;
+    padding-right: 1rem;
+
   }
 details[open] summary::after{
     content: url("/images/icon-arrow-down.svg");
     transform: rotate(180deg);
-    display: inline-block;
+    margin: 0 0 1rem auto;
+    padding-left: 1rem;
+  }
+  details summary {
+    transition: margin 150ms ease-out;
   }
