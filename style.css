@@ -1,73 +1,105 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
 }
 body {
-    height: 95vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 
 #mainContainer {
-
-border: 1px solid #2d2d2d;
-border-radius: 1rem;
-display: flex;
-justify-content: center;
-overflow: hidden;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 33rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px;
+  z-index: -1;
 
 }
 .imgContainer img {
-    height: auto;
-    width: 35rem;
-    margin-left: -4rem;
-    margin-top: 2rem;
+  height: auto;
+  width: 30rem;
+  margin-left: -5rem;
+  margin-top: 4rem;
 }
 .imgContainer {
-    background-image: url(/images/bg-pattern-desktop.svg);
-    background-position: center;
-    background-size: 45rem;
-    background-position-y: -15rem;
-    background-position-x: right;
-    background-repeat: no-repeat;
+  background-image: url(/images/bg-pattern-desktop.svg);
+  background-size: 60rem;
+  background-position-y: -18.2rem;
+  background-position-x: -35rem;
+  background-repeat: no-repeat;
 }
 h2 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
-.imgContainer, .faq {
-    width: 30rem;
+h1 {
+  margin-bottom: 2rem;
+}
+.imgContainer,
+.faq {
+  width: 30rem;
 }
 .faq {
-    padding: 2rem 6rem 2rem 2rem;
+  padding: 3rem 6rem 2rem 1rem;
 }
 
 details {
-    border-bottom: 1px lightgrey solid;
-    padding-top: 1rem;
+  border-bottom: 1px lightgrey solid;
+  padding: 1.2rem 0 0.2rem 0;
 }
- p {
-    margin-top: 0;
- }
-details[open] {
-    transition: 1s ease;
+p {
+  margin-top: 0;
+  font-weight: 400;
+  color: hsl(240, 6%, 50%);
+  font-size: 12px;
 }
 summary {
-    list-style: none;
-    display: flex;
-  }
-summary::after {
-    content: url("/images/icon-arrow-down.svg");
-    margin: 0 0 1rem auto;
-    padding-right: 1rem;
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+}
+details summary strong:hover {
+    color: hsl(14, 88%, 65%);
+}
+details summary strong {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: hsl(237, 12%, 33%);
+}
 
-  }
-details[open] summary::after{
-    content: url("/images/icon-arrow-down.svg");
-    transform: rotate(180deg);
-    margin: 0 0 1rem auto;
-    padding-left: 1rem;
-  }
-  details summary {
-    transition: margin 150ms ease-out;
-  }
+details[open] summary strong {
+  font-weight: 700;
+  color: black;
+}
+
+summary::after {
+  content: url("/images/icon-arrow-down.svg");
+  margin: 0 0 1rem auto;
+  padding-right: 1rem;
+}
+details[open] summary::after {
+  content: url("/images/icon-arrow-down.svg");
+  transform: rotate(180deg);
+  margin: 0 0 1rem auto;
+  padding-left: 1rem;
+}
+
+footer {
+    margin-top: 2rem;
+}
+.imgContainer .floatingBox {
+    position: absolute;
+    width: 12rem;
+    height: auto;
+    bottom: 10rem;
+    left: 16.3rem;
+}
+
+
