@@ -41,7 +41,7 @@ h2 {
   font-size: 1rem;
 }
 h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .imgContainer,
 .faq {
@@ -53,7 +53,7 @@ h1 {
 
 details {
   border-bottom: 1px lightgrey solid;
-  padding: 1.2rem 0 0.2rem 0;
+  padding: 0.8rem 0 0 0 ;
 }
 p {
   margin-top: 0;
@@ -83,7 +83,7 @@ details[open] summary strong {
 
 summary::after {
   content: url("/images/icon-arrow-down.svg");
-  margin: 0 0 1rem auto;
+  margin: 0 0 0.8rem auto;
   padding-right: 1rem;
 }
 details[open] summary::after {
@@ -100,7 +100,7 @@ footer {
     position: absolute;
     width: 12rem;
     height: auto;
-    bottom: 9rem;
+    bottom: 8.7rem;
     left: -5.8rem;
     z-index: 1;
 }
